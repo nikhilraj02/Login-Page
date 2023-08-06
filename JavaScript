@@ -1,0 +1,19 @@
+const wrapper = document.querySelector('.wrapper');
+const loginbut = document.querySelector('.loginbut');
+const cross = document.querySelector('.cross');
+const login = document.querySelector('.login');
+const signup = document.querySelector('.signup')
+
+cross.addEventListener('click', ()=>{
+    wrapper.classList.remove('active')
+})
+
+loginbut.addEventListener('click', ()=>{
+    wrapper.classList.add('active');
+});
+signup.addEventListener('click', ()=> {
+    wrapper.classList.add('trans');
+})
+login.addEventListener('click', ()=>{
+    wrapper.classList.remove('trans');
+})
